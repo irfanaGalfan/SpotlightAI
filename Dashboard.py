@@ -7,9 +7,20 @@ import requests
 import json
 
 # --- 1. Initialize Firebase ---
+# Check if the app is already initialized to avoid errors on refresh
 if not firebase_admin._apps:
-    cred = credentials.Certificate(r"C:\Users\Administrator\OneDrive\Desktop\AI_Project\aiproject-4094d-firebase-adminsdk-fbsvc-c46223dc00.json")
+    # Use Secrets if running on Streamlit Cloud
+    if "firebase" in st.secrets:
+        # Convert the dictionary from secrets back into a credentials object
+        firebase_secrets = dict(st.secrets["firebase"])
+        cred = credentials.Certificate(firebase_secrets)
+    else:
+        # Fallback for your local machine testing
+        cred = credentials.Certificate(r"C:\Users\Administrator\OneDrive\Desktop\AI_Project\aiproject-4094d-firebase-adminsdk-fbsvc-c46223dc00.json")
+    
     firebase_admin.initialize_app(cred)
+
+db = firestore.client()
 
 db = firestore.client()
 FIREBASE_API_KEY = "AIzaSyDCkAotVeSnzYwuv60HXws_C9oBcX0St6s"
