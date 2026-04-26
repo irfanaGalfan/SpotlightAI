@@ -155,3 +155,4 @@ scikit-learn
 docx2txt
 PyPDF2
 pptx
+opencv-python-headless
