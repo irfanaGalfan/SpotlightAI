@@ -152,3 +152,4 @@ requests
 numpy
 opencv-python-headless
 scikit-learn
+docx2txt
