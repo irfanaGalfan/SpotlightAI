@@ -175,7 +175,7 @@ else:
         imgs = ["images/level_easy.png", "images/level_medium.png", "images/level_hard.png"]
         idx = count % len(imgs)
         try:
-            st.image(imgs[idx], use_container_width=True)
+            st.image(imgs[idx], width="stretch"))
         except:
             st.info("Ensure the 'images' folder exists in your GitHub repository.")
 
