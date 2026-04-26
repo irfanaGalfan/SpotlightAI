@@ -38,8 +38,8 @@ google-crc32c==1.8.0
 google-pasta==0.2.0
 google-resumable-media==2.8.0
 googleapis-common-protos==1.72.0
-grpcio==1.76.0
-grpcio-status==1.76.0
+grpcio
+grpcio-status
 gunicorn==23.0.0
 h11==0.16.0
 h2==4.3.0
