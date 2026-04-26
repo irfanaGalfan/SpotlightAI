@@ -144,3 +144,11 @@ wcwidth==0.2.14
 Werkzeug==3.1.4
 wrapt==2.0.1
 streamlit-autorefresh
+streamlit
+streamlit-autorefresh
+firebase-admin
+pandas
+requests
+numpy
+opencv-python-headless
+scikit-learn
