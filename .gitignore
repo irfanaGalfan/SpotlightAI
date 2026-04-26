@@ -1,0 +1,16 @@
+# Environments
+venv/
+
+# Build and Distribution
+build/
+dist/
+*.spec
+
+# Data and Cache
+embeddings/
+__pycache__/
+*.pyc
+
+# IDE and OS
+.vscode/
+Thumbs.db

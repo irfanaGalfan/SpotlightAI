@@ -1,0 +1,10 @@
+streamlit
+opencv-python
+numpy
+pandas
+PyPDF2
+python-docx
+google-genai
+torch
+stable-baselines3
+gymnasium
