@@ -25,6 +25,7 @@ Pre-processing Steps:
 ●	Student scores normalized and stored for reinforcement learning.
  <img width="981" height="577" alt="image" src="https://github.com/user-attachments/assets/47dbdb10-7401-4e8a-b393-93e10ef93851" />
 **3. Approach**
+
 System Modeling:
 1.	Priority Based on Minimum Turns: For each quiz session, the system selects students who have had the fewest turns (least number of questions answered) to participate first.
 ●	This ensures fair distribution of questions among all students and prevents some students from being skipped or overrepresented.
@@ -80,5 +81,6 @@ Evaluation Metrics:
  <img width="1055" height="442" alt="image" src="https://github.com/user-attachments/assets/30ca5a77-d812-443c-b9e0-214272605b3e" />
  <img width="1055" height="314" alt="image" src="https://github.com/user-attachments/assets/de3cd058-6725-4cd7-9c49-69c1dc19b8ea" />
 **5. Conclusion**
+
 The Spotlight AI system demonstrates an effective approach to personalized learning by dynamically adapting question difficulty for each student. Leveraging Q-learning with rule-based rewards, the system selects students with the minimum participation first, ensuring fairness and engagement. Real-time performance tracking, score progression, and difficulty adjustments allow teachers to monitor and support students effectively. Integration with Firebase for data storage and face recognition for student identification makes the system scalable and automated. Overall, Spotlight AI proves the potential of AI-driven adaptive learning, with future enhancements possible through advanced reinforcement learning strategies and richer analytics for improved educational outcomes.
 
